@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0039)http://arduino.ru/Hardware/ArduinoMicro -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Arduino Micro | Аппаратная платформа Arduino</title>
+    
+<link rel="shortcut icon" href="http://arduino.ru/sites/default/files/framework_favicon.ico" type="image/x-icon">
+<meta name="description" content="(Arduino Micro лицевая сторона) (Arduino Micro обратная сторона) Arduino Micro лицевая сторона Arduino Micro обратная сторона">
+<meta name="keywords" content="Arduino,контроллер,электроника,плата,конструктор,электротехника,программирование,Контроллеры Arduino">
+<link rel="canonical" href="./Arduino Micro _ Аппаратная платформа Arduino_files/Arduino Micro _ Аппаратная платформа Arduino.html">
+<meta name="revisit-after" content="1 day">
+    <link type="text/css" rel="stylesheet" media="all" href="./Arduino Micro _ Аппаратная платформа Arduino_files/css_3fab550f8185bd84f274d7fe8a913561.css">
+<link type="text/css" rel="stylesheet" media="print" href="./Arduino Micro _ Аппаратная платформа Arduino_files/css_b3f750061ba5c4d0a83b8e3e5e735fa1.css">
+    <script async="" src="./Arduino Micro _ Аппаратная платформа Arduino_files/async-ads.js"></script><script type="text/javascript" async="" src="./Arduino Micro _ Аппаратная платформа Arduino_files/ga.js"></script><script type="text/javascript" src="./Arduino Micro _ Аппаратная платформа Arduino_files/js_fce1a6d432fc71212f86e7823be6a5ad.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "lightbox2": { "rtl": "0", "file_path": "/(\\w\\w/)sites/default/files", "default_image": "/modules/lightbox2/images/brokenimage.jpg", "border_size": 10, "font_color": "000", "box_color": "fff", "top_position": "", "overlay_opacity": "0.8", "overlay_color": "000", "disable_close_click": true, "resize_sequence": 0, "resize_speed": 400, "fade_in_speed": 400, "slide_down_speed": 600, "use_alt_layout": false, "disable_resize": false, "disable_zoom": false, "force_show_nav": false, "show_caption": true, "loop_items": false, "node_link_text": "View Image Details", "node_link_target": false, "image_count": "Image !current of !total", "video_count": "Video !current of !total", "page_count": "Page !current of !total", "lite_press_x_close": "press \x3ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\x3e\x3ckbd\x3ex\x3c/kbd\x3e\x3c/a\x3e to close", "download_link_text": "", "enable_login": false, "enable_contact": false, "keys_close": "c x 27", "keys_previous": "p 37", "keys_next": "n 39", "keys_zoom": "z", "keys_play_pause": "32", "display_image_size": "original", "image_node_sizes": "()", "trigger_lightbox_classes": "", "trigger_lightbox_group_classes": "", "trigger_slideshow_classes": "", "trigger_lightframe_classes": "", "trigger_lightframe_group_classes": "", "custom_class_handler": 0, "custom_trigger_classes": "", "disable_for_gallery_lists": true, "disable_for_acidfree_gallery_lists": true, "enable_acidfree_videos": true, "slideshow_interval": 5000, "slideshow_automatic_start": true, "slideshow_automatic_exit": true, "show_play_pause": true, "pause_on_next_click": false, "pause_on_previous_click": true, "loop_slides": false, "iframe_width": 600, "iframe_height": 400, "iframe_border": 1, "enable_video": false }, "syntaxhighlighter": { "clipboard": "/sites/all/libraries/syntaxhighlighter/scripts/clipboard.swf" } });
+//--><!]]>
+</script>
+    <!--[if lte IE 7]><link type="text/css" rel="stylesheet" media="all" href="/themes/framework/ie.css" /><![endif]--> <!--If Less Than or Equal (lte) to IE 7-->
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2018649-4']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+   </script>
+  <style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 7px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+  <body class="sidebar-right lightbox-processed">
+    <!-- Layout -->
+    <div class="container"> <!-- add "showgrid" class to display grid -->
+  
+      <div id="header" class="clearfix">
+        <div id="block-block-10" class="block block-block">
+
+  
+  <div class="content">
+        <div style="width: 250px; float:right; margin-right:50px" id="cse-search-form" dir="ltr"><form class="gsc-search-box" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><input autocomplete="off" type="text" size="10" class=" gsc-input" name="search" title="поиск" id="gsc-i-id1" dir="ltr" spellcheck="false" style="outline: none; background: url(http://www.google.com/cse/static/ru/google_custom_search_watermark.gif) 0% 50% no-repeat rgb(255, 255, 255);"><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="button" value="Поиск" class="gsc-search-button" title="поиск"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="удалить результаты">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">технология</div></td><td class="gsc-branding-img"><img src="./Arduino Micro _ Аппаратная платформа Arduino_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form></div>
+<script src="./Arduino Micro _ Аппаратная платформа Arduino_files/jsapi" type="text/javascript"></script><script type="text/javascript"> 
+  google.load('search', '1', {language : 'ru'});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};
+    var customSearchControl = new google.search.CustomSearchControl(
+      '000212414265083961610:_80qtkoe9oo', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.setSearchFormRoot('cse-search-form');
+    customSearchControl.draw('cse', options);
+  }, true);
+</script><script src="./Arduino Micro _ Аппаратная платформа Arduino_files/saved_resource" type="text/javascript"></script><link href="./Arduino Micro _ Аппаратная платформа Arduino_files/default+ru.css" type="text/css" rel="stylesheet"><script src="./Arduino Micro _ Аппаратная платформа Arduino_files/default+ru.I.js" type="text/javascript"></script><link type="text/css" href="./Arduino Micro _ Аппаратная платформа Arduino_files/default.css" rel="stylesheet">
+  </div>
+
+</div>
+
+                  <a href="http://arduino.ru/" title="">
+            <img src="./Arduino Micro _ Аппаратная платформа Arduino_files/framework_logo.png" alt="" id="logo">
+          </a>
+        
+        <div id="sitename">
+					  
+                      <h1><a href="http://arduino.ru/" title="">Arduino.ru</a></h1>
+                  </div> <!-- /#sitename -->
+      
+              </div> <!-- /#header -->
+
+      <div id="nav">
+                  <div id="block-menu-primary-links" class="block block-menu">
+
+  
+  <div class="content">
+        <ul class="menu"><li class="leaf first even"><a href="http://arduino.ru/About" title="Что такое Ардуино?">Что такое Ардуино?</a></li>
+<li class="leaf odd"><a href="http://arduino.ru/Arduino_environment" title="Среда разработки Arduino">Среда разработки</a></li>
+<li class="leaf even"><a href="http://arduino.ru/Reference" title="Программирование Ардуино">Программирование</a></li>
+<li class="leaf odd"><a href="http://arduino.ru/Hardware" title="Аппартная часть платформы Arduino">Контроллеры Arduino</a></li>
+<li class="leaf even"><a href="http://arduino.ru/projects" title="">Проекты</a></li>
+<li class="leaf odd"><a href="http://arduino.ru/forum" title="">Форум</a></li>
+<li class="leaf last even"><a href="http://arduino.ru/buy" title="">Купить в России</a></li>
+</ul>  </div>
+
+</div>
+<div id="block-block-11" class="block block-block">
+
+  
+  <div class="content">
+        <div style="width:100%;" id="cse"><div class="gsc-control-cse gsc-control-cse-ru"><div class="gsc-control-wrapper-cse" dir="ltr"><div class="gsc-results-wrapper-nooverlay"><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Пользовательский поиск</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Интернет</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="показать один результат">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="показать другие результаты">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="показать все результаты">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div>
+  </div>
+
+</div>
+        
+              </div> <!-- /#nav -->
+
+			
+      <div id="main">
+        <div class="breadcrumb"><a href="http://arduino.ru/">Главная</a></div>                <h2>Arduino Micro</h2>                                                <div id="node-2262" class="node">
+
+  
+  
+  
+  <div class="content">
+    <table border="0" cellpadding="1" cellspacing="1" style="width: 500px;">
+<tbody>
+<tr>
+<td>
+				<a href="http://arduino.ru/sites/default/files/u3731/arduinomicrofront.jpg" class="lb lightbox-processed" rel="lightbox"><img alt="Arduino Micro лицевая сторона" src="./Arduino Micro _ Аппаратная платформа Arduino_files/arduinomicrofront-380x171.jpg" style="height: 171px; width: 380px;" width="380" height="171"></a></td>
+<td>
+				<a href="http://arduino.ru/sites/default/files/u3731/arduinomicroback.jpg" class="lb lightbox-processed" rel="lightbox"><img alt="Arduino Micro обратная сторона" src="./Arduino Micro _ Аппаратная платформа Arduino_files/arduinomicroback-380x171.jpg" style="height: 171px; width: 380px;" width="380" height="171"></a></td>
+</tr>
+<tr>
+<td class="rtecenter">
+				<em>Arduino Micro лицевая сторона</em></td>
+<td class="rtecenter">
+				<em>Arduino Micro обратная сторона</em></td>
+</tr>
+</tbody>
+</table>
+<h6>
+	Общие сведения</h6>
+<p>Микроконтроллер <strong>Arduino Micro</strong> – плата микроконтроллера на базе <strong>ATmega32u4</strong> (<a href="http://www.atmel.com/dyn/resources/prod_documents/7766S.pdf">техническое описание</a>), разработанный совместно (in conjunction) с <a href="http://adafruit.com/">Adafruit</a>. Плата имеет 20 цифровых вход/выходов (из них 7 могут использоваться в качестве выходов ШИМ и 12 - как аналоговые входы), кварцевый генератор частотой 16 МГц, гнездо микро-USB, разъем ICSP и кнопку reset. На ней есть все, что необходимо для работы с микроконтроллером. Чтобы запустить Arduino Micro, просто подключите его к компьютеру с помощью кабеля микро-USB. Форм-фактор контроллера позволяет легко разместить его на макетной плате.</p>
+<p>Micro схож с Arduino Leonardo тем, что ATmega32u4 имеет встроенную поддержку USB-соединения, благодаря чему не требуется вспомогательный процессор. Это позволяет Micro появляться на подключенном компьютере в качестве мыши или клавиатуры в дополнение к виртуальному (CDC) последовательному порту (COM). Это влечет и другие изменения в работе платы, которые детально обсуждаются на странице <a href="http://arduino.cc/en/Guide/ArduinoLeonardo">начало работы</a>.&nbsp;</p>
+<h6>
+	Характеристики</h6>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td valign="top" width="319">
+<div>
+					Микроконтроллер</div>
+</td>
+<td valign="top" width="319">
+<div>
+					ATmega32u4</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Рабочее напряжение</div>
+</td>
+<td valign="top" width="319">
+<div>
+					5 В</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Входное напряжение (рекомендуемое)</div>
+</td>
+<td valign="top" width="319">
+<div>
+					7-12 В</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Входное напряжение (предельное)</div>
+</td>
+<td valign="top" width="319">
+<div>
+					6-20 В</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Цифровые Входы/Выходы</div>
+</td>
+<td valign="top" width="319">
+<div>
+					20</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+				Каналы ШИМ</td>
+<td valign="top" width="319">
+				7</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Аналоговые входные каналы</div>
+</td>
+<td valign="top" width="319">
+				12</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Постоянный ток через вход/выход</div>
+</td>
+<td valign="top" width="319">
+<div>
+					40 мА</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Постоянный ток для вывода 3.3 В</div>
+</td>
+<td valign="top" width="319">
+<div>
+					50 мА</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Флеш-память<span>&nbsp; &nbsp; &nbsp;</span></div>
+</td>
+<td valign="top" width="319">
+<div>
+					32 Кб (ATmega32u4) из которых 4 Кб используются для загрузчика</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					ОЗУ<span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></div>
+</td>
+<td valign="top" width="319">
+<div>
+					2,5 Кб (ATmega32u4)</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					EEPROM</div>
+</td>
+<td valign="top" width="319">
+<div>
+					1 Кб (ATmega32u4)</div>
+</td>
+</tr>
+<tr>
+<td valign="top" width="319">
+<div>
+					Тактовая частота</div>
+</td>
+<td valign="top" width="319">
+<div>
+					16 МГц</div>
+</td>
+</tr>
+</tbody>
+</table>
+<h6>
+	Схема и исходные данные</h6>
+<p>Файлы EAGLE: <a href="http://arduino.cc/en/uploads/Main/arduino-micro-reference-design.zip">arduino-micro-reference-design.zip</a></p>
+<p>Принципиальная схема: <a href="http://arduino.cc/en/uploads/Main/arduino-micro-schematic.pdf">arduino-micro-schematic-rev3b.pdf</a></p>
+<h6>
+	Питание</h6>
+<p><strong>Arduino Micro</strong> может питаться через USB подключение или от внешнего источника питания. Источник питания выбирается автоматически.</p>
+<p>Внешнее питание (не USB) может поступать либо от источника питания постоянного тока, либо с батареи. Выводы батареи или источника питания должны подключаться к выводам Gnd и Vin. Плата Arduino Micro может работать при подаче внешнего питания от 6 до 20 В. Однако при подаче напряжения ниже 7&nbsp;В, на вывод 5&nbsp;В может поступать менее пяти вольт, что приведет к нестабильной работе платы. При использовании более 12 В, стабилизатор напряжения может перегреться и вызвать повреждение платы.</p>
+<p><strong>Выводы питания:</strong></p>
+<ul>
+<li>
+		<strong>VIN</strong><strong>.</strong> Входное напряжение Arduino при использовании внешнего источника питания (в отличие от 5 В с USB соединения или другого регулируемого источника питания). Вы можете подавать напряжение на этот вывод.</li>
+<li>
+		<strong>5</strong><strong>V</strong><strong>.</strong> Регулируемое напряжение питания для питания микроконтроллера и других компонентов на плате. Может поступать либо с VIN через встроенный стабилизатор, либо через USB или другой источник стабилизированный источник питания 5 В.</li>
+<li>
+		<strong>3</strong><strong>V</strong><strong>. Питание </strong>3,3 В генерируется встроенным стабилизатором. Максимальный ток 50 мА.</li>
+<li>
+		<strong>GND.</strong> Выводы земли.</li>
+</ul>
+<h6>
+	Память</h6>
+<p>ATmega32u4 имеет 32 КБ флеш-памяти (вместе с 4 КБ, которые используются загрузчиком (бутлодером)). Также контроллер имеет 2,5 КБ ОЗУ и 1 КБ EEPROM (чтение и запись которой производится с помощью <a href="http://arduino.ru/Reference/Library/EERPOM">библиотеки EEPROM</a>).</p>
+<h6>
+	Входы и Выходы</h6>
+<p>Каждый из 20 цифровых выводов Micro может использоваться как вход или как выход, используя функции <a href="http://arduino.ru/Reference/PinMode">pinMode()</a>, <a href="http://arduino.ru/Reference/DigitalWrite">digitalWrite()</a> и <a href="http://arduino.ru/Reference/DigitalRead">digitalRead()</a>. Работают при напряжении 5 В. Максимальный входной или выходной ток каждого вывода 40 мА. На каждом выводе имеется внутренний нагрузочный резистор 20-50 кОм (по умолчанию отключен). Дополнительно некоторые выводы имеют специальные функции:</p>
+<ul>
+<li>
+		<strong>Последовательная шина: 0 (</strong><strong>RX</strong><strong>) и 1 (</strong><strong>TX</strong><strong>).</strong> Используются для получения (RX) и передачи (TX) последовательных данных TTL уровней с использованием аппаратных возможностей последовательной шины ATmega32U4. Обратите внимание, что на Micro класс <strong>Serial</strong> относится к (CDC) соединению; для последовательного TTL соединения на выводах 0 и 1 используйте класс <strong>Serial</strong><strong>1</strong>.</li>
+<li>
+		<strong>TWI: 2 (SDA) </strong><strong>и</strong><strong> 3 (SCL). </strong>Поддерживает TWI соединение с использованием библиотеки <a href="http://arduino.cc/en/Reference/Wire">Wire</a>.</li>
+</ul>
+<p><strong>Внешние прерывания: 0(</strong><strong>RX</strong><strong>), 1(</strong><strong>TX</strong><strong>), 2 и 3</strong><strong>. </strong>Эти выводы могут быть сконфигурированы для запуска прерывания по нижней границе, по фронту или спаду, или по изменению значения. Детали описаны в функции <a href="http://arduino.ru/Reference/AttachInterrupt">attachInterrupt()</a>.</p>
+<ul>
+<li>
+		<strong>ШИМ</strong><strong>: 3, 5, 6, 9, 10, 11 </strong><strong>и</strong><strong> 13.</strong> С помощью функции <a href="http://arduino.ru/Reference/AnalogWrite">analogWrite()</a> обеспечивает 8-битный ШИМ.</li>
+<li>
+		<strong>SPI</strong><strong>: на разъеме </strong><strong>ICSP</strong><strong>.</strong> Данные выводы поддерживают связь по SPI с использованием библиотеки <a href="http://arduino.ru/Reference/Library/SPI">SPI</a>. Обратите внимание, что выводы SPI не подключены ни к каким цифровым вход/выходам, как на Arduino Uno, они доступны только на соединителе ICSP и ближайших выводах, маркированных MISO, MOSI и SCK.</li>
+<li>
+		<strong>RX</strong><strong>_</strong><strong>LED</strong><strong>/</strong><strong>SS.</strong> Это дополнительный вывод по сравнению с Leonardo. Он подключен к RX_LED, который показывает активность передачи по шине USB, но также может использоваться как вывод выбора подчиненного устройства (SS) для связи по SPI.</li>
+<li>
+		<strong>LED: 13.</strong> Встроенный светодиод, подключенный к цифровому выводу 13. При высоком уровне на этом выводе светодиод включен,&nbsp; при низком уровне – выключен.</li>
+<li>
+		<strong>Аналоговые входы: </strong><strong>A</strong><strong>0 - </strong><strong>A</strong><strong>5, </strong><strong>A</strong><strong>6 - </strong><strong>A</strong><strong>11 (на цифровых выводах 4, 6, 8, 9, 10 и 12).</strong> Всего Micro имеет 12 аналоговых входов, причем входы с A0 по A5 маркированы непосредственно на выводах, а другие, к которым также можно получить доступ в программе с использованием констант с A6 до A11, распределены соответственно на цифровых выводах 4, 6, 8, 9, 10 и 12. Все они также могут использоваться в качестве цифровых вход/выходов. Каждый аналоговый вход обеспечивает разрешающую способность 10 бит (т.е. 1024 различных значения). По умолчанию измерения на всех аналоговых входах производятся от потенциала земли до 5 В, но верхний предел этого диапазона можно изменить, используя вывод AREF и функцию <a href="http://arduino.ru/Reference/AnalogReference">analogReference</a>().</li>
+</ul>
+<p>На плате имеются еще два вывода:</p>
+<ul>
+<li>
+		<strong>AREF.</strong> Опорное напряжение для аналоговых входов. Используется с функцией <a href="http://arduino.ru/Reference/AnalogReference">analogReference</a>().</li>
+<li>
+		<strong>Reset.</strong> Для сброса микроконтроллера переведите эту линию в низкий уровень. Обычно используется, чтобы добавить кнопку Reset на плату расширения, если эта плата закрывает доступ к кнопке на самом контроллере.</li>
+</ul>
+<h6>
+	Цоколевка</h6>
+<p>&nbsp;</p>
+<p class="rtecenter"><img alt="Цоколевка Arduino Micro" src="./Arduino Micro _ Аппаратная платформа Arduino_files/arduinomicro_pinout.png" width="256" height="322"></p>
+<h6>
+	&nbsp;</h6>
+<p>&nbsp;</p>
+<p><span>Распределение выводов Arduino Micro показывает полную функциональность всех выводов для использования их аналогично Leonardo.&nbsp;</span></p>
+<p><span>Смотри также </span><a href="http://arduino.cc/en/Hacking/PinMapping32u4">соответствие между выводами Arduino и портами ATmega32u4</a>.</p>
+<h6>
+	Связь</h6>
+<p><strong>Micro </strong>имеет несколько средств для связи с компьютером, другим Arduino, или иными микроконтроллерами. Контроллер <strong>ATmega32U4</strong> предоставляет UART TTL (5V) для последовательной связи, доступный на цифровых выводах 0 (RX) и 1 (TX). Также 32U4 разрешает последовательный обмен (CDC) через USB и появляется для компьютерного программного обеспечения как виртуальный COM-порт. Кроме того, кристалл работает как «full speed» USB устройство при использовании стандартных драйверов USB COM. <a href="http://arduino.cc/en/Guide/Windows#toc4">Для Windows требуется .inf файл</a>&nbsp;(смотри пункт 4 для Arduino Uno). Программное обеспечение Arduino включает монитор последовательной шины (Serial monitor), позволяющий принимать и посылать с платы Arduino простые текстовые данные. Светодиоды RX и TX на плате будут вспыхивать при передаче данных через USB соединение с компьютером (но не при последовательной связи через выводы 0 и 1) В библиотеке <a href="http://www.arduino.cc/en/Reference/SoftwareSerial">SoftwareSerial</a> предусмотрена последовательная связь через любой из цифровых выводов Micro.</p>
+<p><strong>ATmega32U4 </strong>также поддерживает интерфейсы <strong>I<sup>2</sup>C (TWI)</strong> и <strong>SPI</strong>. Программное обеспечение Arduino включает библиотеку Wire для упрощения пользования шиной <strong>I<sup>2</sup>C</strong>; более подробно смотри в <a href="http://arduino.cc/en/Reference/Wire">документации</a>. Для интерфейса <strong>SPI </strong>используйте библиотеку <a href="http://arduino.ru/Reference/Library/SPI">SPI</a>.</p>
+<p><strong>Micro</strong> может появляться как обычная клавиатура или мышь, и может быть запрограммирован для управления этими устройствами ввода при помощи классов <a href="http://arduino.cc/en/Reference/MouseKeyboard">Keyboard и Mouse</a>.</p>
+<h6>
+	Программирование</h6>
+<p>Micro программируется с помощью программного обеспечения Arduino (<a href="http://arduino.ru/Arduino_environment">скачать</a>). В меню <strong>Tools &gt; Boardmenu</strong> выберите плату "Arduino Micro". Более подробную информацию можно найти в <a href="http://arduino.ru/Reference">справочнике</a> и <a href="http://arduino.ru/Arduino_environment">инструкциях</a>.</p>
+<p>Контроллер <strong>ATmega32U4</strong> на <strong>Arduino Micro</strong> поставляется с уже записанным загрузчиком (<a href="http://arduino.cc/en/Tutorial/Bootloader">бутлодером</a>), позволяющим загружать новый код без использования внешнего аппаратного программатора. Связь осуществляется по протоколу <strong>AVR109</strong>.</p>
+<p>Можно также обойти загрузчик и программировать микроконтроллер через разъем ICSP (In-Circuit Serial Programming, последовательное внутрисхемное программирование); более подробная информация приведена в <a href="http://arduino.cc/en/Hacking/Programmer">инструкциях</a>.</p>
+<h6>
+	Автоматический (программный) сброс и инициация загрузчика</h6>
+<p>Вместо того чтоб требовать физического нажатия кнопки сброса перед загрузкой, <strong>Micro </strong>разработан так, что его можно сбросить программно при помощи кода, запущенного на подключенном компьютере. Сброс запускается, когда виртуальный (CDC) последовательный / COM порт Micro открывается при скорости 1200 бод и затем закрывается. При&nbsp; этом процессор будет сброшен, разрывая USB подключение к компьютеру (что означает, что виртуальный последовательный COM порт) исчезнет. После сброса процессора стартует загрузчик, который остается активным около 8 секунд. Загрузчик также может быть запущен нажатием кнопки <strong>Reset </strong>на <strong>Micro</strong>. Обратите внимание, что при первой подаче питания платы, она сразу перейдет к выполнению пользовательского кода, при его наличии, а не к запуску загрузчика.</p>
+<p>Вследствие такого способа сброса платы <strong>Micro</strong>, лучше всего перед загрузкой инициировать сброс программой Arduino, особенно если вы обычно перед загрузкой нажимаете кнопку <strong>Reset </strong>на других платах. Если программа не может сбросить плату, можно всегда запустить бутлодер нажатием кнопки сброса на плате.</p>
+<h6>
+	Защита от токовых перегрузок на USB</h6>
+<p>В <strong>Micro </strong>установлен восстанавливающийся предохранитель, защищающий компьютерные USB порты от короткого замыкания и токовых перегрузок. Хотя большинство компьютеров имеют собственную встроенную защиту, предохранитель обеспечивает дополнительный уровень защиты. В случае прохождения через USB порт тока более 500 мА, предохранитель автоматически разорвет соединение до устранения короткого замыкания или перегрузки.</p>
+<h6>
+	Физические характеристики</h6>
+<p>Максимальная длина и ширина печатной платы <strong>Arduino Micro</strong> составляют соответственно 4,8 и 1,77 см, без учета выступающего за указанные габариты USB соединителя. Компоновка позволяет легко размещать плату в беспаечном макете.</p>
+<div class="service-links"><ul class="links"><li class="service-links--ru-vkontakte first"><a href="http://vkontakte.ru/share.php?url=http%3A%2F%2Farduino.ru%2FHardware%2FArduinoMicro&title=Arduino+Micro" title="Share this on VKontakte" id="service-links--ru-vkontakte" class="service-links--ru-vkontakte" rel="nofollow" target="_blank"><img src="./Arduino Micro _ Аппаратная платформа Arduino_files/_ru_vkontakte.png" alt="VKontakte" title="" width="16" height="16"></a></li>
+<li class="service-links--ru-yandex"><a href="http://zakladki.yandex.ru/newlink.xml?url=http%3A%2F%2Farduino.ru%2FHardware%2FArduinoMicro&name=Arduino+Micro" title="Сделать закладку данной статьи на Yandex" id="service-links--ru-yandex" class="service-links--ru-yandex" rel="nofollow" target="_blank"><img src="./Arduino Micro _ Аппаратная платформа Arduino_files/_ru_yandex.png" alt="Yandex" title="" width="16" height="16"></a></li>
+<li class="service-links-facebook"><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Farduino.ru%2FHardware%2FArduinoMicro&t=Arduino+Micro" title="Поделиться на Facebook." id="service-links-facebook" class="service-links-facebook" rel="nofollow" target="_blank"><img src="./Arduino Micro _ Аппаратная платформа Arduino_files/facebook.png" alt="Facebook" title="" width="16" height="16"></a></li>
+<li class="service-links-google last"><a href="http://www.google.com/bookmarks/mark?op=add&bkmk=http%3A%2F%2Farduino.ru%2FHardware%2FArduinoMicro&title=Arduino+Micro" title="Сделать закладку статьи на Google." id="service-links-google" class="service-links-google" rel="nofollow" target="_blank"><img src="./Arduino Micro _ Аппаратная платформа Arduino_files/google.png" alt="Google" title="" width="16" height="16"></a></li>
+</ul></div>  </div>
+
+  <div class="meta clearfix">
+
+    
+          <div class="terms">
+        <span>Tags:</span><ul class="links inline"><li class="taxonomy_term_4 first last"><a href="http://arduino.ru/taxonomy/term/4" rel="tag" title="">Контроллеры Arduino</a></li>
+</ul>      </div>
+    
+  </div>
+
+</div>
+      </div> <!-- /#main -->
+
+              <div id="sidebar-right" class="sidebar">
+          <div id="block-user-1" class="block block-user">
+
+      <h3>ImaSoft</h3>
+  
+  <div class="content">
+        <ul class="menu"><li class="leaf first even"><a href="http://arduino.ru/myuserpoints">Мои баллы</a></li>
+<li class="leaf odd"><a href="http://arduino.ru/users/imasoft">Мой профиль</a></li>
+<li class="collapsed even"><a href="http://arduino.ru/node/add">Создать материал</a></li>
+<li class="leaf last odd"><a href="http://arduino.ru/logout">Выйти</a></li>
+</ul>  </div>
+
+</div>
+        </div> <!-- /#sidebar-right -->
+      
+       <div class="clear"></div> 
+       <div id="push"></div> 
+    </div> <!-- /.container -->
+    <!-- /layout -->
+
+   <div id="footer" class="clear">
+        <div id="block-block-5" class="block block-block">
+
+  
+  <div class="content">
+        <div style="float: left; margin: 18px 0pt 0pt 18px;">
+	Материалы по программированию Arduino переведены с официального сайта проекта Ардуино&nbsp;— <a href="http://arduino.cc/" target="_blank">http://arduino.cc</a><br>
+	и представлены по лицензии <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="nofollow" target="_blank">Creative Commons Attribution-ShareAlike 3.0 License</a>.<br>
+	Электропочта для связи: <strong> <script language="javascript">
+        <!--
+        var part1 = "electropochta";
+        var part2 = "arduino.ru";
+        document.write("<a href=\"mailto:"+ part1 + '@' + part2+"\">"+part1 + '@' + part2+"<\/a>");
+        // -->
+    </script><a href="mailto:electropochta@arduino.ru">electropochta@arduino.ru</a></strong></div>
+  </div>
+
+</div>
+              </div> <!-- /#footer -->
+  <script type="text/javascript" src="./Arduino Micro _ Аппаратная платформа Arduino_files/js_9634bc3f3b3595c3cd0855aaebe5ecdc.js"></script>
+
+  
+
+<div id="lightbox2-overlay" style="display: none;"></div>      <div id="lightbox" style="display: none;" class="lightbox2-orig-layout">        <div id="outerImageContainer" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"><div id="modalContainer" style="display: none; padding: 10px;"></div><div id="frameContainer" style="display: none; padding: 10px;"></div><div id="imageContainer" style="display: none; padding: 10px;"><img id="lightboxImage" alt=""><div id="hoverNav"><a id="prevLink" title="Previous" href="http://arduino.ru/Hardware/ArduinoMicro#" style="padding-top: 10px;"></a><a id="nextLink" title="Next" href="http://arduino.ru/Hardware/ArduinoMicro#" style="padding-top: 10px;"></a></div></div><div id="loading"><a href="http://arduino.ru/Hardware/ArduinoMicro#" id="loadingLink"></a></div></div>        <div id="imageDataContainer" class="clearfix" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">          <div id="imageData"><div id="imageDetails"><span id="caption"></span><span id="numberDisplay"></span></div><div id="bottomNav"><div id="frameHoverNav"><a id="framePrevLink" title="Previous" href="http://arduino.ru/Hardware/ArduinoMicro#" style="padding-top: 10px;"></a><a id="frameNextLink" title="Next" href="http://arduino.ru/Hardware/ArduinoMicro#" style="padding-top: 10px;"></a></div><a id="bottomNavClose" title="Close" href="http://arduino.ru/Hardware/ArduinoMicro#" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);"></a><a id="bottomNavZoom" href="http://arduino.ru/Hardware/ArduinoMicro#"></a><a id="bottomNavZoomOut" href="http://arduino.ru/Hardware/ArduinoMicro#"></a><a id="lightshowPause" title="Pause Slideshow" href="http://arduino.ru/Hardware/ArduinoMicro#" style="display: none;"></a><a id="lightshowPlay" title="Play Slideshow" href="http://arduino.ru/Hardware/ArduinoMicro#" style="display: none;"></a></div></div>        </div>      </div><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 168px; display: none; top: 35px; left: 935px; position: absolute;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

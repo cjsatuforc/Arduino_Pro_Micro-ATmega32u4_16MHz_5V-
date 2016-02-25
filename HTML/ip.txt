@@ -1,0 +1,2 @@
+http://arduino.ru/Hardware/ArduinoMicro..................................................................(Arduino Micro)
+https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/installing-windows...................(Pro Micro & Fio V3 Hookup Guide)
