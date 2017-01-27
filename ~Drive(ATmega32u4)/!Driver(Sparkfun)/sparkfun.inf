@@ -89,6 +89,8 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 [SourceDisksNames]
 [DeviceList]
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9205
+%SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9205&MI_00
+%SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9206
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9206&MI_00
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9203
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00
@@ -104,6 +106,8 @@ ServiceBinary=%12%\%DRIVERFILENAME%.sys
 
 [DeviceList.NTamd64]
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9205
+%SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9205&MI_00
+%SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9206
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9206&MI_00
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9203
 %SparkFun.Pro.Micro%=DriverInstall, USB\VID_1B4F&PID_9204&MI_00

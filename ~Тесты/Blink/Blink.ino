@@ -1,11 +1,10 @@
-
 /*
  *v1.0_Write_by_ImaSoft
  */
 
 //-------------------------------------------------
 void setup() {
-  // initialize digital pin 13 as an output.
+// initialize digital pin 13 as an output.
 //  pinMode(17, OUTPUT);
 //  digitalWrite(17, HIGH);
 //  pinMode(14, INPUT);
